@@ -6,16 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          animation: {
-            'fade-in-down_1s_ease-in-out': 'fade-in-down 1s ease-in-out',
-          },     
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
