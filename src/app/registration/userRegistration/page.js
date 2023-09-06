@@ -94,22 +94,39 @@ const UserRegistration = () => {
                               Login to Your Account
                           </h1>
                           <div>
-                              <label className="block text-sm">
+                                <label className="block mt-2 text-sm">
+                                    UserTokenId
+                                </label>
+                                <input type="text"
+                                    className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                    placeholder="Enter UserToken Id" />
+                            </div>
+                          <div>
+                              <label className="block mt-2 text-sm">
                                   Email
                               </label>
                               <input type="email"
                                   className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                  placeholder="" />
+                                  placeholder="abc@email.com" />
                           </div>
                           <div>
-                              <label className="block mt-4 text-sm">
+                                <label className="block mt-2 text-sm">
+                                    Phone Number
+                                </label>
+                                <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                    placeholder="333-444-5555" />
+                            </div>
+                          <div>
+                              <label className="block mt-2 text-sm">
                                   Password
                               </label>
                               <input
                                   className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                                  placeholder="" type="password" />
+                                  placeholder="abcdefg" type="password" />
                           </div>
-                          <p className="mt-4">
+                          
+                          <p>
                               <a className="text-sm text-blue-600 hover:underline" href="./forgot-password.html">
                                   Forgot your password?
                               </a>
@@ -123,8 +140,7 @@ const UserRegistration = () => {
                           </button>
 
 
-                          <hr className="my-8" />
-
+                          <hr className="my-2" />
 
                           <div className="flex items-center justify-center gap-4">
                               <button onClick={() => navigate('/registration/userRegistration/userRegister')}

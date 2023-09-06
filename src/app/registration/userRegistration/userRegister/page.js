@@ -12,7 +12,7 @@ const UserRegister = () => {
   return (
     <div className="flex items-center min-h-screen bg-black">
     <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row ">
           <div className="h-25 md:h-auto md:w-1/2 flex items-center justify-center">
               <img className="h-auto max-w-full rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30  hover:scale-110" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSckwMfcHJd3YULFe3G0wOJA8R5MA20uSQA&usqp=CAU"
                   alt="img" />
@@ -41,12 +41,20 @@ const UserRegister = () => {
                           placeholder="" />
                   </div>
                   <div>
-                      <label className="block mt-4 text-sm">
+                      <label className="block mt-2 text-sm">
                           Email
                       </label>
                       <input type="email"
                           className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                          placeholder="" />
+                          placeholder="abc@email.com" />
+                  </div>
+                  <div>
+                        <label className="block mt-2 text-sm">
+                            Phone Number
+                        </label>
+                            <input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                                placeholder="333-444-5555" />
                   </div>
                   <div>
                       <label className="block mt-4 text-sm">
@@ -54,9 +62,10 @@ const UserRegister = () => {
                       </label>
                       <input
                           className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                          placeholder="" type="password" />
+                          placeholder="abcdefg" type="password" />
                   </div>
-                  <p className="mt-4">
+                  
+                  <p>
                       <a className="text-sm text-blue-600 hover:underline" href="./forgot-password.html">
                           Forgot your password?
                       </a>
@@ -68,7 +77,7 @@ const UserRegister = () => {
                       Already have an account? <span className="underline">Login</span>
                   </button>
         
-                  <hr className="my-8" />
+                  <hr className="my-2" />
 
                   <div className="flex items-center justify-center gap-4">
                       <button onClick={() => navigate('/registration')}

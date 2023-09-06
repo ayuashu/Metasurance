@@ -34,22 +34,31 @@ const CompanyRegistration = () => {
                       Login to Your Account
                   </h1>
                   <div>
-                      <label className="block text-sm">
+                      <label className="block mt-2 text-sm">
+                          CompanyTokenId
+                      </label>
+                      <input type="text"
+                          className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                          placeholder="Enter CompanyToken Id" />
+                  </div>
+                  <div>
+                      <label className="block mt-2 text-sm">
                           Email
                       </label>
                       <input type="email"
                           className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                          placeholder="" />
+                          placeholder="xyz@email.com" />
                   </div>
                   <div>
-                      <label className="block mt-4 text-sm">
+                      <label className="block mt-2 text-sm">
                           Password
                       </label>
-                      <input
+                      <input type="password"
                           className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                          placeholder="" type="password" />
+                          placeholder="abcdefgh"  />
                   </div>
-                  <p className="mt-4">
+                  
+                  <p>
                       <a className="text-sm text-blue-600 hover:underline" href="./forgot-password.html">
                           Forgot your password?
                       </a>
@@ -63,8 +72,7 @@ const CompanyRegistration = () => {
                   </button>
 
 
-                  <hr className="my-8" />
-
+                  <hr className="my-2" />
 
                   <div className="flex items-center justify-center gap-4">
                       <button onClick={() => navigate('/registration/companyRegistration/companyRegister')}
