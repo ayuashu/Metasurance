@@ -1,4 +1,5 @@
 "use client"
+import Navbar from '@/app/components/Navbar/Navbar';
 import React, { useState } from 'react';
 
 const PolicyWebsite = () => {
@@ -21,6 +22,8 @@ const PolicyWebsite = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:min-w-xl sm:mx-auto lg:min-w-[500px]">
         <div className="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
@@ -99,7 +102,8 @@ const PolicyWebsite = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 
