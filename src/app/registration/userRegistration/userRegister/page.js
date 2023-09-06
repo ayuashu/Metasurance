@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Navbar from "@/app/components/Navbar/Navbar";
 
 const UserRegister = () => {
     const router = useRouter()
@@ -10,6 +11,8 @@ const UserRegister = () => {
         router.push(location)
     }
   return (
+    <>
+    <Navbar/>
     <div className="flex items-center min-h-screen bg-black">
     <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
       <div className="flex flex-col md:flex-row ">
@@ -89,7 +92,8 @@ const UserRegister = () => {
               </div> 
             </div> 
           </div>  
-        </div>   
+          </div>  
+        </>
     )
 }
 
