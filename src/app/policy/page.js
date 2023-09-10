@@ -1,12 +1,13 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
-import Navbar from '../components/Navbar/Navbar';
+import Navigation from '../components/Navigation/page';
+import Footer from '../components/Footer/footer';
 
 const page = () => {
   return (
     <>
-    <Navbar/>
+    <Navigation/>
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
@@ -38,6 +39,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer/>
       </div>
       </>
   );

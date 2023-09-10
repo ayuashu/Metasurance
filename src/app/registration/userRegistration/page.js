@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Navbar from "@/app/components/Navbar/Navbar";
-
+import Navigation from "@/app/components/Navigation/page";
+import Footer from "@/app/components/Footer/footer";
 
 const UserRegistration = () => {
     // const [email, setEmail] = useState("");
@@ -73,15 +73,15 @@ const UserRegistration = () => {
     
     return (
         <>
-        <Navbar/>
+        <Navigation/>
           <div className="flex items-center min-h-screen bg-black">
-            <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+            <div className="flex-1 h-auto max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
               <div className="flex flex-col md:flex-row">
                   <div className="h-32 md:h-auto md:w-1/2 flex items-center justify-center">
                       <img className="h-auto max-w-full rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30  hover:scale-110" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsAViZMnOVPRXHp8DW5tVMNadxV16MtQT-NA&usqp=CAU"
                           alt="img" />
                   </div>
-                  <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+                  <div className="flex items-center justify-center p-2 sm:p-12 md:w-1/2">
                       <div className="w-full">
                           <div className="flex justify-center">
                               <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 text-blue-600" fill="none"
@@ -93,7 +93,7 @@ const UserRegistration = () => {
                                       d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                               </svg>
                           </div>
-                          <h1 className="mb-4 text-2xl font-bold text-center text-gray-700">
+                          <h1 className="mb-1 text-2xl font-bold text-center text-gray-700">
                               Login to Your Account
                           </h1>
                           <div>
@@ -158,7 +158,8 @@ const UserRegistration = () => {
                         </div> 
                       </div> 
                     </div> 
-                  </div>  
+                  </div>
+                <Footer/>    
             </div> 
             </>
   )

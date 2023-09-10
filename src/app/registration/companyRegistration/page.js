@@ -3,7 +3,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import Navbar from "@/app/components/Navbar/Navbar";
+import Navigation from "@/app/components/Navigation/page";
+import Footer from "@/app/components/Footer/footer";
+
 
 const CompanyRegistration = () => {
 
@@ -13,7 +15,7 @@ const CompanyRegistration = () => {
     }
   return (
     <>
-    <Navbar />
+    <Navigation />
     <div className="flex items-center min-h-screen bg-black">
     <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
       <div className="flex flex-col md:flex-row">
@@ -96,6 +98,7 @@ const CompanyRegistration = () => {
                         </div>
                     </div>
                 </div>
+              <Footer/>  
             </div>
         </>
     );

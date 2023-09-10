@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Navbar from "@/app/components/Navbar/Navbar";
+import Navigation from "@/app/components/Navigation/page";
+import Footer from "@/app/components/Footer/footer";
+
 
 const UserRegister = () => {
     const router = useRouter()
@@ -12,9 +14,9 @@ const UserRegister = () => {
     }
   return (
     <>
-    <Navbar/>
+    <Navigation/>
     <div className="flex items-center min-h-screen bg-black">
-    <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
+    <div className="flex-1 h-auto max-w-4xl mx-auto bg-white rounded-lg shadow-xl">
       <div className="flex flex-col md:flex-row ">
           <div className="h-25 md:h-auto md:w-1/2 flex items-center justify-center">
               <img className="h-auto max-w-full rounded-full shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30  hover:scale-110" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSckwMfcHJd3YULFe3G0wOJA8R5MA20uSQA&usqp=CAU"
@@ -91,7 +93,8 @@ const UserRegister = () => {
                 </div> 
               </div> 
             </div> 
-          </div>  
+          </div>
+          <Footer/>  
           </div>  
         </>
     )

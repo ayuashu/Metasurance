@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import React from 'react'
 import {useRouter} from  'next/navigation'
-import Navbar from '../components/Navbar/Navbar'
+import Navigation from '../components/Navigation/page'
+import Footer from '../components/Footer/footer'
 
 const Registration = () => {
   const router = useRouter()
@@ -12,9 +13,9 @@ const Registration = () => {
 
   return (
     <>
-    <Navbar/>
+    <Navigation/>
     
-    <div className="bg-cyan-50 min-h-screen p-4">
+    <div className="bg-cyan-50 min-h-max p-4">
     <div className='text-7xl md:text-center pt-20'>Registration</div>
       <div className="flex items-center justify-center gap-8 pt-10"> 
           <button
@@ -39,6 +40,7 @@ const Registration = () => {
             Go to Home Page
           </button>  
         </div>
+       <Footer/> 
       </div>
     </>
   )
