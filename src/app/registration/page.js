@@ -13,9 +13,9 @@ const Registration = () => {
 
   return (
     <>
-    <Navigation/>
     
     <div className="bg-cyan-50 min-h-max p-4">
+    <Navigation/>
     <div className='text-7xl md:text-center pt-20'>Registration</div>
       <div className="flex items-center justify-center gap-8 pt-10"> 
           <button

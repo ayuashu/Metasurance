@@ -4,6 +4,8 @@ import { useRouter } from 'next/navigation'
 import Navigation from './components/Navigation/page'
 import Footer from './components/Footer/footer'
 import PolicyAnimation from './components/PolicyAnimation/PolicyAnimation'
+import Video from './components/Video/page'
+
 
 const Page = () => {
   const router = useRouter()
@@ -13,33 +15,44 @@ const Page = () => {
 
   return (
     <>
+      <div className="bg-slate-700 bg-blend-lighten hover:bg-blend-darken min-h-screen">
       <Navigation />
-      l
-      <div className="bg-slate-200 min-h-screen">
-        <div className="container mx-auto p-4 flex flex-row flex-wrap">
-          <div className="flex flex-col justify-between items-center">
-            <div className='w-full'>
-              <h1 className="text-6xl">Welcome to METASURANCE</h1>
-              <div className="md:w-96 lg:w-fit mt-16 mx-auto text-5xl">Who are you?</div>
+        <div className="boxcontainer mx-auto p-4 flex flex-row flex-wrap" style={{height: '90vh'}}>
+          <div className="basis-1/3 flex flex-col justify-between items-center">
+            <div style={{paddingTop: '100px'}}>
+              <PolicyAnimation />
             </div>
-            <span className='h-16'></span>
-            <button
-              onClick={() => navigate('/registration/userRegistration')}
-              className="px-20 py-5 md:min-w-[250px] rounded-md text-white font-bold text-xl bg-slate-500 hover:bg-slate-700">
-              User
-            </button>
-            <span className='h-14'></span>
-            <button
-              onClick={() => navigate('/registration/companyRegistration')}
-              className="px-20 py-5 md:min-w-[250px] rounded-md text-white font-bold text-xl bg-amber-400 hover:bg-amber-600">
-              Company
-            </button>
           </div>
-          {/* lotte section */}
-          <PolicyAnimation />
+          
+          <div className="basis-1/3">
+          <div className='w-full' style={{paddingTop: '150px'}}>
+              <h1 className="text-5xl text-center text-indigo-100" >Welcome to</h1> 
+              <h1 className="text-[80px] text-center text-indigo-100"><b>METASURANCE</b></h1>
+              <div className="md:w-96 lg:w-fit mt-16 mx-auto text-2xl text-indigo-300">ALONG META, ALONG YOU</div>
+              <div className="md:w-96 lg:w-fit mt-2 mx-auto text-2xl text-indigo-300">BEYOND META, BEYOND YOU</div>
+            </div>
+          </div>
+          
+          <div className='basis-1/3 flex flex-col p-5 w-full'>
+            <div className="flex items-center justify-center gap-4">
+              <button
+                onClick={() => navigate('/registration/userRegistration')}
+                className="h-10 px-11 text-indigo-100 text-lg transition-colors duration-150 bg-slate-700 rounded-full focus:shadow-outline hover:bg-slate-900">
+                    <b>User</b>   
+              </button>
+              <button
+                onClick={() => navigate('/registration/companyRegistration')}
+                className="h-10 px-7 text-indigo-100 text-lg transition-colors duration-150 bg-slate-700 rounded-full focus:shadow-outline hover:bg-slate-900">
+                <b>Company</b>
+              </button>
+            </div>
+            <div className="p-10 mt-auto w-full rounded-full bg-slate-600 bg-opacity-75 md:bg-opacity-50 transition-shadow duration-300 ease-in-out shadow-lg shadow-black/30 opacity-75  delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black">
+                <Video />
+            </div>  
+          </div>
+        
         </div>
-
-        <Footer />
+        <Footer />       
       </div>
     </>
   )
