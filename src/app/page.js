@@ -46,7 +46,7 @@ const Page = () => {
                 <b>Company</b>
               </button>
             </div>
-            <div className="p-10 mt-auto w-full rounded-full bg-slate-600 bg-opacity-75 md:bg-opacity-50 transition-shadow duration-300 ease-in-out shadow-lg shadow-black/30 opacity-75  delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-black">
+            <div className="p-10 mt-auto w-full ">
                 <Video />
             </div>  
           </div>

@@ -11,7 +11,7 @@ function PolicyAnimation() {
             preserveAspectRatio: "xMidYMid slice",
         },
     };
-    return <Lottie options={defaultOptions} height={400} width={400} />;
+    return <Lottie options={defaultOptions} height={300} width={300} />;
 }
 
 export default PolicyAnimation;

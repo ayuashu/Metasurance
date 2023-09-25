@@ -8,3 +8,10 @@
     gap: 10px;
     margin: 5px 5px 5px 5px;
   }
+
+.video-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
