@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from 'react';
 import ReactPlayer from 'react-player';
 
@@ -13,15 +14,15 @@ const Video = () => {
   };
 
   return (
-    <div className="video-container">
+    <div className="rounded-full">
       <ReactPlayer
         ref={playerRef}
         url={videoSrc}
         playing={true}
         muted={true}
         controls={true}
-        width={400}
-        height={200}
+        width={450}
+        height={250}
         onProgress={handleVideoProgress} // Call the event handler on video progress
       />
     </div>
