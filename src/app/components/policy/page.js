@@ -1,8 +1,8 @@
 "use client"
 import React from 'react'
 import Link from 'next/link'
-import Navigation from '../components/Navigation/page';
-import Footer from '../components/Footer/footer';
+import Navigation from '../Navigation/page';
+import Footer from '../Footer/footer';
 
 const page = () => {
   return (

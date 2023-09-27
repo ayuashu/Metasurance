@@ -85,11 +85,11 @@ const CompanyRegistration = () => {
 
                     <hr className="my-2" />
                                 <div className="flex items-center justify-center gap-4">
-                                    <button onClick={() => navigate('/registration/companyRegistration/companyRegister')}
+                                    <button onClick={() => navigate('/components/registration/companyRegistration/companyRegister')}
                                         className="flex items-center justify-center w-full px-4 py-2 text-sm text-black text-gray-700 border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-500">
                                         Register
                                     </button>
-                                    <button onClick={() => navigate('/registration')}
+                                    <button onClick={() => navigate('/components/registration')}
                                         className="flex items-center justify-center w-full px-4 py-2 text-sm text-black text-gray-700 border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-500">
                                         Back to Registration
                                     </button>

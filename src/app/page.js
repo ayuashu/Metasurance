@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
 import { useRouter } from 'next/navigation'
-import Navigation from './components/Navigation/page'
-import Footer from './components/Footer/footer'
 import PolicyAnimation from './components/PolicyAnimation/PolicyAnimation'
 import Video from './components/Video/page'
+import Navigation from './components/Navigation/page'
+import Footer from './components/Footer/footer'
 
 
 const Page = () => {
@@ -36,12 +36,12 @@ const Page = () => {
           <div className='basis-1/3 flex flex-col p-5 w-full'>
             <div className="flex items-center justify-center gap-4">
               <button
-                onClick={() => navigate('/registration/userRegistration')}
+                onClick={() => navigate('/components/registration/userRegistration')}
                 className="h-10 px-11 text-indigo-100 text-lg transition-colors duration-150 bg-slate-700 rounded-full focus:shadow-outline hover:bg-slate-900">
                     <b>User</b>   
               </button>
               <button
-                onClick={() => navigate('/registration/companyRegistration')}
+                onClick={() => navigate('/components/registration/companyRegistration')}
                 className="h-10 px-7 text-indigo-100 text-lg transition-colors duration-150 bg-slate-700 rounded-full focus:shadow-outline hover:bg-slate-900">
                 <b>Company</b>
               </button>

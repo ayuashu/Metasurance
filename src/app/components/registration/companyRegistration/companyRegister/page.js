@@ -76,7 +76,7 @@ const CompanyRegister = () => {
                 </p>
 
 
-                  <button onClick={() => navigate('/registration/companyRegistration')}
+                  <button onClick={() => navigate('/components/registration/companyRegistration')}
                       className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">
                       Already have an account? <span className="underline">Login</span>
                   </button>
@@ -84,7 +84,7 @@ const CompanyRegister = () => {
                   <hr className="my-2" />
 
                                 <div className="flex items-center justify-center gap-4">
-                                    <button onClick={() => navigate('/registration')}
+                                    <button onClick={() => navigate('/components/registration')}
                                         className="flex items-center justify-center w-full px-4 py-2 text-sm text-black text-gray-700 border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-500">
                                         Back to Registration
                                     </button>

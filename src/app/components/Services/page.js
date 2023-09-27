@@ -1,11 +1,11 @@
 "use client"
 import React, { useState} from 'react'
-import Products, { data } from '@/app/Services/service'
-import Navigation from '../components/Navigation/page'
-import Footer from '../components/Footer/footer'
-import ServiceItem from './serviceItem'
 import Navbarr from './navbarr'
 import './style.css'
+import Footer from '../Footer/footer'
+import Navigation from '../Navigation/page'
+import ServiceItem from './serviceItem'
+import Products from './service'
 
 const uniqueList = [
   ...new Set(

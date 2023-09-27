@@ -1,6 +1,7 @@
 import React from 'react'
-import Navigation from '../components/Navigation/page'
-import Footer from '../components/Footer/footer'
+import Footer from '../Footer/footer'
+import Navigation from '../Navigation/page'
+
 
 const About = () => {
   return (

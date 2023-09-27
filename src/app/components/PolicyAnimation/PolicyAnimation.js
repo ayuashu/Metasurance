@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "../../assets/lottie/policy.json";
+import animationData from '@/app/components/assets/lottie/policy.json'
 
 function PolicyAnimation() {
     const defaultOptions = {
